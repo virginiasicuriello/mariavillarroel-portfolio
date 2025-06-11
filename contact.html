@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact - Maria Villarroel</title>
+  <!-- Favicon for browser tab -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+  <!-- Toggle mobile menu when hamburger icon is clicked -->
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    const button = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    button.classList.toggle('active');
+  }
+</script>
+
+<body>
+
+<div class="container">
+  <header class="contact-header">
+   <a href="index.html" class="header-title">Maria Villarroel</a>
+
+    <!-- Hamburger menu -->
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</div>
+    <!-- Navigation links -->  
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Writing/Reporting</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="main-wrapper">
+    <div class="grid grid-contact">
+      <!-- Text -->
+      <div>
+        <h1>Let’s Connect</h1>
+        <p>Feel free to reach out via email or through the form below.</p>
+        <p><a href="mailto:mavavillarroel12@gmail.com">mavavillarroel12@gmail.com</a></p>
+        <form action="https://formspree.io/f/meogjlvv" method="POST" class="contact-form">
+          <label>Name <span>(required)</span></label>
+          <div class="name-row">
+            <input type="text" name="first-name" placeholder="First Name" required />
+            <input type="text" name="last-name" placeholder="Last Name" required />
+          </div>
+        
+          <label>Email <span>(required)</span></label>
+          <input type="email" name="email" placeholder="Email" required />
+        
+          <label>Message <span>(required)</span></label>
+          <textarea name="message" placeholder="Message" required></textarea>
+        
+          <button type="submit">SEND</button>
+        </form>
+        
+      </div>
+
+      <!-- Image After -->
+      <div class="contact">
+        <img src="img/mava-contact.jpg" alt="Maria Villarroel standing in front of a DNC 2024 sign at an event venue" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-contact">
+    <p>Maria Villarroel</p>
+    <p><a href="mailto:mavavillarroel12@gmail.com">mavavillarroel12@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>

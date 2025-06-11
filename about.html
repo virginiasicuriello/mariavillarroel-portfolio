@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn more about Maria Villarroel">
+
+  <title>About - Maria Villarroel</title>
+   <!-- Favicon for browser tab -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- Toggle mobile menu when hamburger icon is clicked -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    const button = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    button.classList.toggle('active');
+  }
+  </script>
+    
+<body>
+
+<div class="container">
+  <header>
+   <a href="index.html" class="header-title">Maria Villarroel</a>
+    
+    <!-- Hamburger menu -->
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</div>
+    <!-- Navigation links -->  
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Writing/Reporting</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+
+    </nav>
+  </header>
+  
+<!-- Main content section -->
+<div class="main-wrapper">
+  <div class="grid grid-about">
+    <!-- Text -->
+    <div class="text-content">
+      <h1>About Me</h1>
+      <p>
+        I am a Ph.D. Candidate in the multi-sector communication program at St. John’s University, where I am specializing in Political Communication. My research focuses on freedom of the press and news cultures in Latin America and the U.S. I’m currently working on my doctoral dissertation, which analyzes professionalism in Spanish and English media at the time of covering right-wing Latinos during the 2024 U.S. general election. 
+      </p>
+      <p>
+        I earned my Master of Science degree in International Communication from St. John’s in 2023, as well as a Bachelor of Science in Journalism in 2022. Throughout my career, I have written for various news organizations, spanning different beats such as politics and immigration for The Latin Times, business for LinkedIn News, and entertainment and culture for Game Rant. 
+      </p>
+      <p>
+        As a multi-faceted communication enthusiast, I have also worked for the Office of Media Relations at St. John's and Will Murphy’s Congressional Campaign, where I helped draft press releases and pitch news stories to local news media. 
+      </p>
+      <p>
+        Originally from Venezuela, I can provide a fresh and international perspective to any role I am given. With a fervent passion for democratic ideas, values and development, my approach to journalism is one based on integrity, empathy and relentless pursuit of the truth. 
+      </p>
+        
+      
+    </div>
+
+    <!-- Image After -->
+    <div class="about">
+      <img src="img/mava-about.jpg" alt="Maria Villarroel conducting an interview" />
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+  <p>Maria Villarroel</p>
+  <p><a href="mailto:mavavillarroel12@gmail.com">mavavillarroel12@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
